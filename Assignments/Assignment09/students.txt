@@ -1,0 +1,4 @@
+Sara	Wall	3.25
+Claire	Sand	2.89
+Philip	Banks	2.45
+Jerry	Butler	3.12
