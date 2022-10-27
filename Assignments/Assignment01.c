@@ -1,4 +1,4 @@
-/*=========================================================
+/*=======================================================
 Programmer: Jack Mahedy
 Email : jmahedy@purdue.edu
 CNIT 105, Assignment 01
@@ -6,7 +6,7 @@ CNIT 105, Assignment 01
 Program Description : This project displays my name, email,
 and assignment. Under this information is "CIT" made up of
 many letters.
-=========================================================*/
+=======================================================*/
 #define _CRT_SECURE_NO_WARNINGS							// to ignore different warnings.
 #include <stdio.h>
 #include <curses.h>
