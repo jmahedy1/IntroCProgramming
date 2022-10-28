@@ -8,10 +8,10 @@
 ===================================================================*/
 //Header files
 #define _CRT_SECURE_NO_WARNINGS
-#include<stdio.h>
-#include<conio.h>
-#include<math.h>
-#include<string.h>
+#include <stdio.h>
+#include <curses.h>
+#include <math.h>
+#include <string.h>
 
 //typedef struct
 typedef struct
@@ -19,6 +19,23 @@ typedef struct
 	int number;
 	char binary[9];
 } binary;
+
+// function definition of the revstr()  
+void revstr(char *str1)  
+{  
+    // declare variable  
+    int i, len, temp;  
+    len = strlen(str1); // use strlen() to get the length of str string  
+      
+    // use for loop to iterate the string   
+    for (i = 0; i < len/2; i++)  
+    {  
+        // temp variable use to temporary hold the string  
+        temp = str1[i];  
+        str1[i] = str1[len - i - 1];  
+        str1[len - i - 1] = temp;  
+    }  
+}  
 
 //Main function:
 int main() {
@@ -39,6 +56,7 @@ int main() {
 	//Prompt the user
 	for (i = 0; i < 30;) {
 		char c[] = "00000000";
+		char x;
 		printf("\tEnter a number between 0 and 255 (-1 to end): ");
 		scanf("%d", &num);
 
@@ -56,7 +74,7 @@ int main() {
 				num = num / 2;
 			}
 
-			_strrev(c);
+			revstr(c);
 
 			strcpy(numbers[i].binary, c);
 			i++;
@@ -67,6 +85,5 @@ int main() {
 		printf("\t%d\t\t%s\t\t%X\n", numbers[j].number, numbers[j].binary, numbers[j].number);
 	}
 	
-	_getch();	//To keep the output screen open
 	return 0;	//End the program
 }

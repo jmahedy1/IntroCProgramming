@@ -1,0 +1,4 @@
+Sammy	91.00
+Jerry	85.00
+Elaine	78.00
+Jimmy	63.00

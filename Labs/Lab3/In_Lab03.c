@@ -11,7 +11,7 @@
 //Pre-processor Directives:
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>		
-#include<conio.h>
+#include<curses.h>
 #include<math.h>		
 
 // main function:
@@ -40,6 +40,5 @@ int main()
 	printf("The area of the triangle is: %.2f\n", area);					//equation output
 	printf("The volume of the prism is: %.2f\n", volume);
 
-	_getch();		//To keep the output screen open
 	return 0;		//End the program
 }

@@ -7,7 +7,7 @@
 =======================================================================*/
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-#include<conio.h>
+#include<curses.h>
 
 //Main function:
 int main()
@@ -56,6 +56,5 @@ int main()
 		printf("num3 is the greatest");
 	}
 
-	_getch();	//To keep the output screen open
 	return 0;	//End the program
 }	

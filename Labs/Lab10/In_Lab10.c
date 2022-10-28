@@ -9,7 +9,7 @@
 //Header files
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-#include<conio.h>
+#include<curses.h>
 #include<math.h>
 #define SIZE 30
 
@@ -62,9 +62,8 @@ int main() {
 	printf("\n\tAfter swapping the first and last array element:\n");
 	printf("\tLow\tHigh\n\t=============\n");
 	for (int j = 0; j < i; j++) {
-		printf("\t%d\t%d\n", november[j].low_temp, november[j].high_temp);
+		printf("\t%d\t%d\n", november[j].high_temp, november[j].low_temp);
 	}
 
-	_getch();	//To keep the output screen open
 	return 0;	//End the program
 }

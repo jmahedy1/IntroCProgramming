@@ -7,7 +7,7 @@
 =======================================================================*/
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-#include<conio.h>
+#include<curses.h>
 
 //Function prototypes
 void display_myInfo();
@@ -50,7 +50,6 @@ int main()
 			printf("Invalid input.");
 	}
 
-	_getch();	//To keep the output screen open
 	return 0;	//End the program
 }
 
@@ -58,7 +57,7 @@ int main()
 	Function: display_myInfo()
 	Input Parameter: none
 	Output: none
-	Task: Display programmer’s info in a box of stars.
+	Task: Display programmerï¿½s info in a box of stars.
 	*******************************************************************/
 void display_myInfo()
 {

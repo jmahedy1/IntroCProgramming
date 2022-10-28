@@ -7,7 +7,7 @@
 //Pre-processor Directives:
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-#include<conio.h>
+#include<curses.h>
 
  // main function:
 	int main()
@@ -34,6 +34,5 @@
 		printf("Today's low tempurature is %d\n", low);
 		printf("Today's high tempurature is %d\n", high);
 
-	_getch();										//To keep the output screen open
 	return 0;										//End the program
 }

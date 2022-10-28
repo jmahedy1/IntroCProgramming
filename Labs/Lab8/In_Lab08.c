@@ -10,8 +10,9 @@
 //Header files
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-#include<conio.h>
+#include<curses.h>
 #include<math.h>
+#include<stdlib.h>
 #define SIZE1 5
 #define SIZE2 20
 
@@ -100,6 +101,5 @@ int main()
 	avg1 = sum1 / 20.0;
 	printf("\tAverage of 20 random scores = %.2f", avg1);
 
-	_getch();	//To keep the output screen open
 	return 0;	//End the program
 }
