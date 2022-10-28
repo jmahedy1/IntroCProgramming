@@ -9,7 +9,7 @@
 //Header files
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-#include<conio.h>
+#include<curses.h>
 #include<math.h>
 #define SIZE 20
 #define RATE 1.1665
@@ -85,7 +85,6 @@ int main()
 	}
 	printf("\n\n");
 
-	_getch();	//To keep the output screen open
 	return 0;	//End the program
 }
 
@@ -93,7 +92,7 @@ int main()
  Function: display_myInfo()
  Input Paramaters: none
  Output data type: void
- Task: Display programmer’s info in a box of stars
+ Task: Display programmerï¿½s info in a box of stars
  *******************************************************************/
 void display_myInfo() {
 	printf("\t***************************************\n");

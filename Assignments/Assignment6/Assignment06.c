@@ -9,7 +9,7 @@
  //Header files
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-#include<conio.h>
+#include<curses.h>
 #include<math.h>
 #define SIZE 50
 
@@ -82,6 +82,5 @@ int main()
 
 	printf("\n\tThe maximum price is $%.2f", largest);
 
-	_getch();	//To keep the output screen open
 	return 0;	//End the program
 }

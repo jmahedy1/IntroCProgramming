@@ -10,7 +10,7 @@
 //Header files
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-#include<conio.h>
+#include<curses.h>
 #include<math.h>
 #include<string.h>
 #define SIZE 20
@@ -46,7 +46,6 @@ int main() {
 
 	if (fptr == NULL) {
 		printf("\tFile could not be opened!");
-		_getch();
 		return 1;
 	}
 	count = 0;
@@ -77,7 +76,6 @@ int main() {
 
 	if (fptr == NULL) {
 		printf("\tFile could not be opened for saving!");
-		_getch();
 		return 1;
 	}
 
@@ -91,7 +89,6 @@ int main() {
 
 	printf("\n\tUpdated array was saved to the file");
 
-	_getch();	//To keep the output screen open
 	return 0;	//End the program
 }
 
@@ -99,7 +96,7 @@ int main() {
 Function: display_myInfo()
 Input Parameter: none
 Output: none
-Task: Display programmer’s info in a box of stars
+Task: Display programmerï¿½s info in a box of stars
 *******************************************************************/
 void display_myInfo() {
 	printf("\t***************************************\n");

@@ -8,7 +8,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <math.h>
-#include <conio.h>
+#include <curses.h>
 
 int main()
 {
@@ -65,6 +65,5 @@ int main()
 		printf("The smallest coefficient is: %.2f\n", c);
 	}
 	
-	_getch();
 	return 0;
 }

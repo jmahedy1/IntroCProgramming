@@ -9,7 +9,7 @@
 //Header files
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-#include<conio.h>
+#include<curses.h>
 #include<math.h>
 #include<string.h>
 
@@ -111,6 +111,5 @@ int main() {
 		printf("\t%s\t$%.2f\n", code[j].device_code, code[j].device_price);
 	}
 
-	_getch();	//To keep the output screen open
 	return 0;	//End the program
 }

@@ -8,9 +8,10 @@
  ====================================================================*/
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-#include<conio.h>
-#include <math.h>
+#include<curses.h>
+#include<math.h>
 #define PI 3.1415
+
  //Function prototypes
 void display_myInfo();
 void display_menu();
@@ -25,7 +26,7 @@ int main()
 	//Declare Variables
 	int choice = 0;
 	float radius, volume, height, surface, s1, s2, s3, area;
-	int true;
+	int yes;
 
 	//Call display_myinfo and display_menu
 	display_myInfo();
@@ -54,8 +55,8 @@ int main()
 	case 3:
 		printf("Enter the three sides of a triangle ");
 		scanf("%f %f %f", &s1, &s2, &s3);
-		true = verify_triangle(s1, s2, s3);
-		if (true == 1) {
+		yes = verify_triangle(s1, s2, s3);
+		if (yes == 1) {
 			area = area_triangle(s1, s2, s3);
 			printf("The area of the triangle = %.2f", area);
 		}
@@ -67,7 +68,6 @@ int main()
 		printf("Invalid input.");
 	}
 
-	_getch();	//To keep the output screen open
 	return 0;	//End the program
 }
 
@@ -75,7 +75,7 @@ int main()
 	Function: display_myInfo()
 	Input Parameter: none
 	Output: none
-	Task: Display programmer’s info in a box of stars.
+	Task: Display programmerï¿½s info in a box of stars.
 	*******************************************************************/
 void display_myInfo()
 {

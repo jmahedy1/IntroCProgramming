@@ -53,6 +53,5 @@ int main()
     printf("Cost of gas: $%.2f\n", cost);
     printf("Mileage on this trip: %.2f miles / gallon\n", mileage);
 
-    _getch();
     return 0;
 }

@@ -10,7 +10,7 @@
  //Header files
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-#include<conio.h>
+#include<curses.h>
 #include<math.h>
 
 //Function prototypes
@@ -76,7 +76,6 @@ int main()
 			printf("\tInvalid selection!\n\n\n");
 		}
 	}
-	_getch();	//To keep the output screen open
 	return 0;	//End the program
 }
 
@@ -84,7 +83,7 @@ int main()
 Function: display_myInfo()
 Input Parameter: none
 Output: none
-Task: Display programmer’s info in a box of stars
+Task: Display programmerï¿½s info in a box of stars
 *******************************************************************/
 void display_myInfo() {
 	printf("\t*********************************\n");
